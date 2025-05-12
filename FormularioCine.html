@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Don Bosco - Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- referencia a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Cinema Don Bosco</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="about.html">Acerca de</a> |
+            <a href="contact.html">Contacto</a> |
+            <a href="Creadores.html">Creadores</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Contacto</h2>
+        <form id="form-contacto">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required minlength="3">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto" class="form-control" required>
+                    <option value="">Seleccione...</option>
+                    <option value="reservas">Reservas</option>
+                    <option value="quejas">Quejas o sugerencias</option>
+                    <option value="empresa">Información para empresas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <!-- Mapa de ubicacion del cine (Universidad Don Bosco) -->
+        <div class="mapa mt-4">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.254963890625!2d-89.1562736!3d13.7159035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63375d2edcba6f%3A0x5101ecc11020bce6!2sUniversidad%20Don%20Bosco!5e0!3m2!1ses!2ssv!4v1712361234567!5m2!1ses!2ssv" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>Síguenos en redes: @CimaDonBosco</p>
+        <p>Teléfono:2234-4589</p>
+    </footer>
+
+</body>
+</html>
